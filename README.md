@@ -25,7 +25,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Create a virtualenv and activate it: `python3 -m venv ~/.devops` and `source ~/.devops/bin/activate`
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
@@ -36,7 +36,9 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+* Setup and Configure Docker locally: `./run_docker.sh`
+* Setup and Configure Kubernetes locally: `minikube start`
+* Create Flask app in Container: `./make_prediction.sh`
+* Run via kubectl: `./run_kubernetes.sh`
+
+Output log files are in `output_txt_files/`.
